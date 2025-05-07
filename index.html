@@ -1,14 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/output.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio by Ben Openshaw</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="./src/main.js"></script>
+    <script src="https://kit.fontawesome.com/23384adc04.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-white text-gray-900 antialiased">
+    <!-- Header -->
+    <header class="relative top-0 z-50 w-full">
+      <div class="mx-auto max-w-7xl px-4 py-4 flex justify-between items-center">
+        <span class="font-semibold text-xl">Ben Openshaw</span>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-6 text-sm md:border md:border-gray-200 md:rounded-full md:px-4 md:py-[6px]">
+          <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+          <a href="#about" class="hover:text-blue-600 transition">About</a>
+          <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden flex items-center border border-gray-200 rounded-full px-4 py-[6px] space-x-1 text-sm font-medium text-gray-800 focus:outline-none">
+          <span>Menu</span>
+          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="absolute left-0 top-full w-full bg-white z-40 md:hidden hidden px-4">
+        <nav class="flex flex-col text-sm">
+          <a href="#projects" class="border-b border-gray-200
+          pt-2.5 pb-2.5 hover:text-blue-600 transition">Projects</a>
+          <a href="#about" class="border-b border-gray-200
+          pt-2.5 pb-2.5 hover:text-blue-600 transition">About</a>
+          <a href="#contact" class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-blue-600 transition">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="py-24">
+        <div class="mx-auto max-w-7xl px-4 flex flex-col items-start">
+          
+          <!-- Profile Image -->
+          <img src="/src/assets/images/Ben_portfolio.jpg" alt="Portfolio image of Ben Openshaw" class="h-16 w-16 rounded-full object-cover mb-6" />
+      
+          <!-- Headline -->
+          <h1 class="text-3xl sm:text-4xl lg:max-w-2xl font-bold text-gray-900 mb-4">
+            Shopify partner for local businesses and growing brands.
+          </h1>
+      
+          <!-- Description -->
+          <p class="text-base text-gray-600 max-w-2xl mb-6">
+            I’m Ben, a front-end developer and Shopify partner based in Surrey, UK. I work with merchants to set up, customise, and maintain Shopify stores that are professional and easy to manage.
+          </p>
+      
+          <!-- Social Icons -->
+          <div class="flex justify-center gap-6 text-gray-500 text-xl">
+            <a href="#" class="hover:text-gray-900" aria-label="Instagram"><i class="fa-solid fa-square-envelope"></i></a>
+            <a href="#" class="hover:text-gray-900" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="hover:text-gray-900" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="hover:text-gray-900" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+      
+        </div>
+      </section>
+  </body>
 </html>
