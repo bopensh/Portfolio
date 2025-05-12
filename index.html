@@ -7,177 +7,172 @@
     <link href="./src/output.css" rel="stylesheet">
     <script src="./src/main.js"></script>
     <script src="https://kit.fontawesome.com/23384adc04.js" crossorigin="anonymous"></script>
-  </head>
-  <body class="bg-white text-gray-900 antialiased">
-
     <!-- Re-initialise Tailwind with: npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
-     
-    <!-- Header Section -->
-    <header class="relative top-0 z-50 w-full">
-      <div class="mx-auto max-w-7xl px-4 lg:px-8 py-4 flex justify-between items-center">
-        <span class="font-semibold text-xl">Ben Openshaw</span>
+  </head>
+  <body class="bg-zinc-50 text-gray-900 antialiased">
+    <div class="bg-white mx-auto max-w-7xl border-l border-r border-zinc-100">
 
-        <!-- Desktop Nav -->
-        <nav class="hidden md:flex space-x-6 text-sm md:border md:border-gray-200 md:rounded-full md:px-4 md:py-[6px]">
-          <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
-          <a href="#about" class="hover:text-blue-600 transition">About</a>
-          <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
-        </nav>
-
-        <!-- Mobile Menu Button -->
-        <button id="menu-toggle" class="md:hidden flex items-center border border-gray-200 rounded-full px-4 py-[6px] space-x-1 text-sm font-medium focus:outline-none">
-          <span>Menu</span>
-          <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="absolute left-0 top-full w-full bg-white z-40 md:hidden hidden px-4">
-        <nav class="flex flex-col text-sm">
-          <a href="#projects" class="border-b border-gray-200
-          pt-2.5 pb-2.5 hover:text-blue-600 transition">Projects</a>
-          <a href="#about" class="border-b border-gray-200
-          pt-2.5 pb-2.5 hover:text-blue-600 transition">About</a>
-          <a href="#contact" class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-blue-600 transition">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="py-16">
-        <div class="mx-auto max-w-7xl px-4 lg:px-8 flex flex-col items-start">
-          <!-- Profile Image -->
-          <img src="/src/assets/images/Ben_portfolio_avatar-min.jpg" alt="Portfolio image of Ben Openshaw" class="h-16 w-16 rounded-full object-cover mb-6" />
-          <!-- Headline -->
-          <h1 class="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
-            Shopify Developer based in Surrey, UK.
-          </h1>
-          <!-- Description -->
-          <p class="text-base max-w-2xl mb-6">
-            I’m Ben, a Shopify Developer based in Surrey, UK. I work with merchants to build, customise, and maintain storefronts that are professional and easy to manage.
-          </p>
-          <!-- Social Icons -->
-          <div class="flex justify-center gap-6 text-gray-500 text-xl">
-            <a href="#" class="hover:text-gray-900" aria-label="Mail"><i class="fa-solid fa-square-envelope"></i></a>
-            <a href="#" class="hover:text-gray-900" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="hover:text-gray-900" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="#" class="hover:text-gray-900" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <!-- Header Section -->
+      <header class="relative top-0 z-50 w-full">
+        <div class="mx-auto max-w-7xl px-4 lg:px-24 py-4 flex justify-between items-center">
+          <div class="flex justify-between items-center">
+            <img src="/src/assets/images/Ben_portfolio_avatar-min.jpg" alt="Portfolio image of Ben Openshaw" class="h-12 w-12 rounded-full object-cover bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm" />
           </div>
-        </div>
-      </section>
 
-      <!-- Services Section -->
-      <section class="pb-16">
-        <div class="mx-auto w-full max-w-7xl px-4 lg:px-8">
-          <div class="md:border-l md:border-zinc-100 md:pl-6">
-            <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-4 md:grid-cols-4">
-              <h2 class="font-semibold uppercase text-sm md:text-base">I can help with</h2>
-              <div class="md:col-span-3">
-                <ul class="space-y-12">
-                  <li class="group relative flex flex-col items-start">
-                    <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Shopify Store Setup and Migrations</h3>
-                    <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente magni facilis consequatur placeat nostrum.</p>
-                  </li>
-                  <li class="group relative flex flex-col items-start">
-                    <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Theme Customisation</h3>
-                    <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, reiciendis. Veritatis quos sint soluta.</p>
-                  </li>
-                  <li class="group relative flex flex-col items-start">
-                    <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Apps & Integrations</h3>
-                    <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis impedit voluptatem enim voluptatibus! Commodi.</p>
-                  </li>
-                  <li class="group relative flex flex-col items-start">
-                    <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Ongoing Maintenance & Training</h3>
-                    <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aspernatur architecto dolores doloremque tempora.</p>
-                  </li>
-                  <li class="group relative flex flex-col items-start">
-                    <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Fixes & Troubleshooting</h3>
-                    <p class="relative z-10 mt-2 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem at fugiat est ipsa suscipit.</p>
-                  </li>
-                </ul>
+          <!-- Desktop Nav -->
+          <nav class="hidden md:flex space-x-6 text-sm md:border md:border-gray-200 md:rounded-full md:px-4 md:py-[6px]">
+            <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button id="menu-toggle" class="md:hidden flex items-center border border-gray-200 rounded-full px-4 py-[6px] space-x-1 text-sm font-medium focus:outline-none">
+            <span>Menu</span>
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute left-0 top-full w-full bg-white z-40 md:hidden hidden px-4">
+          <nav class="flex flex-col text-sm">
+            <a href="#projects" class="border-b border-gray-200
+            pt-2.5 pb-2.5 hover:text-blue-600 transition">Projects</a>
+            <a href="#about" class="border-b border-gray-200
+            pt-2.5 pb-2.5 hover:text-blue-600 transition">About</a>
+            <a href="#contact" class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-blue-600 transition">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="py-16">
+          <div class="mx-auto max-w-7xl px-4 lg:px-24 flex flex-col items-start">
+            <!-- Profile Image -->
+            <!-- <img src="/src/assets/images/Ben_portfolio_avatar-min.jpg" alt="Portfolio image of Ben Openshaw" class="h-16 w-16 rounded-full object-cover mb-6" /> -->
+            <!-- Headline -->
+            <h1 class="max-w-4xl text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-tight
+            ">
+              Ben Openshaw | Shopify Developer | Based in Surrey, UK. 
+            </h1>
+            <!-- Description -->
+            <p class="text-base max-w-3xl mb-6">
+              I enjoy working with Shopify merchants to build, customise, and maintain their storefronts. Please keep reading below for an overview of the services I can provide.
+            </p>
+            <!-- Social Icons -->
+            <div class="flex justify-center gap-6 text-gray-500 text-xl">
+              <a href="#" class="hover:text-gray-900" aria-label="Mail"><i class="fa-solid fa-square-envelope"></i></a>
+              <a href="#" class="hover:text-gray-900" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="hover:text-gray-900" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="hover:text-gray-900" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="pb-16">
+          <div class="mx-auto w-full max-w-7xl px-4 lg:px-24">
+            <div class="md:border-l md:border-zinc-100 md:pl-6">
+              <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+                <h2 class="font-semibold text-sm md:text-base font-plexmono uppercase">Services</h2>
+                <div class="md:col-span-3">
+                  <ul class="space-y-8 md:space-y-10">
+                    <li class="group relative flex flex-col items-start">
+                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Shopify Store Setup & Migrations</h3>
+                      <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente magni facilis consequatur placeat nostrum.</p>
+                    </li>
+                    <li class="group relative flex flex-col items-start">
+                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Theme Customisation</h3>
+                      <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, reiciendis. Veritatis quos sint soluta.</p>
+                    </li>
+                    <li class="group relative flex flex-col items-start">
+                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Apps & Integrations</h3>
+                      <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis impedit voluptatem enim voluptatibus! Commodi.</p>
+                    </li>
+                    <li class="group relative flex flex-col items-start">
+                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Ongoing Maintenance & Training</h3>
+                      <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aspernatur architecto dolores doloremque tempora.</p>
+                    </li>
+                    <li class="group relative flex flex-col items-start">
+                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Fixes & Troubleshooting</h3>
+                      <p class="relative z-10 mt-2 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem at fugiat est ipsa suscipit.</p>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-            <!-- Projects Section -->
-            <section class="pb-16">
-              <div class="mx-auto w-full max-w-7xl px-4 lg:px-8">
-                <div class="md:border-l md:border-zinc-100 md:pl-6">
-                  <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-4 md:grid-cols-4">
-                    <h2 class="font-semibold uppercase text-sm md:text-base">Projects</h2>
-                    <div class="md:col-span-3">
-                      <ul class="space-y-12">
-                        <li class="group relative flex flex-col items-start">
-                          <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Hersey & Son Silversmiths</h3>
-                          <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente magni facilis consequatur placeat nostrum.</p>
-                          <div class="mt-4 flex items-center gap-2 text-sm font-semibold tracking-wide
-                           uppercase text-teal-500">
-                            <div>Read More</div>
-                            <i class="fa-solid fa-angle-right"></i>
-                          </div>
-                        </li>
-                        <li class="group relative flex flex-col items-start">
-                          <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Boardhaus</h3>
-                          <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente magni facilis consequatur placeat nostrum.</p>
-                          <div class="mt-4 flex items-center gap-2 text-sm font-semibold tracking-wide
-                           uppercase text-teal-500">
-                            <div>Read More</div>
-                            <i class="fa-solid fa-angle-right"></i>
-                          </div>
-                        </li>
-                        <li class="group relative flex flex-col items-start">
-                          <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Project 3</h3>
-                          <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente magni facilis consequatur placeat nostrum.</p>
-                          <div class="mt-4 flex items-center gap-2 text-sm font-semibold tracking-wide
-                           uppercase text-teal-500">
-                            <div>Read More</div>
-                            <i class="fa-solid fa-angle-right"></i>
-                          </div>
-                        </li>  
-                      </ul>
+              <!-- Projects Section -->
+              <section class="pb-16">
+                <div class="mx-auto w-full max-w-7xl px-4 lg:px-24">
+                  <div class="md:border-l md:border-zinc-100 md:pl-6">
+                    <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+                      <h2 class="font-semibold text-sm md:text-base font-plexmono uppercase">Projects</h2>
+                      <div class="md:col-span-3">
+                        <ul class="space-y-10 md:space-y-12">
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Hersey & Son Silversmiths</h3>
+                            <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente magni facilis consequatur placeat nostrum.</p>
+                            <div class="mt-4 flex items-center gap-2 text-xs font-semibold tracking-wide
+                            uppercase text-teal-500">
+                              <div>View project</div>
+                              <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Boardhaus</h3>
+                            <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente magni facilis consequatur placeat nostrum.</p>
+                            <div class="mt-4 flex items-center gap-2 text-xs font-semibold tracking-wide
+                            uppercase text-teal-500">
+                              <div>View project</div>
+                              <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Project 3</h3>
+                            <p class="relative z-10 mt-2 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente magni facilis consequatur placeat nostrum.</p>
+                            <div class="mt-4 flex items-center gap-2 text-xs font-semibold tracking-wide
+                            uppercase text-teal-500">
+                              <div>View project</div>
+                              <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                          </li>  
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
+              </section>
 
-            <!-- Contact Section -->
-            <section class="pb-16">
-              <div class="mx-auto w-full max-w-7xl px-4 lg:px-8">
-                <div class="md:border-l md:border-zinc-100 md:pl-6">
-                  <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-4 md:grid-cols-4">
-                    <h2 class="font-semibold uppercase text-sm md:text-base">Contact</h2>
-                    <div class="md:col-span-3">
-                      <ul class="space-y-12">
-                        <li class="group relative flex flex-col items-start">
-                          <a href="#" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">ben.openshaw@icloud.com</a>
-                        </li>
-                        <li class="group relative flex flex-col items-start">
-                          <a href="#" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">ben.openshaw@icloud.com</a>
-                        </li>
-                        <li class="group relative flex flex-col items-start">
-                          <a href="#" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">ben.openshaw@icloud.com</a>
-                        </li>
-                        <li class="group relative flex flex-col items-start">
-                          <a href="#" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">ben.openshaw@icloud.com</a>
-                        </li>  
-                      </ul>
+              <!-- Contact Section -->
+              <section class="pb-16">
+                <div class="mx-auto w-full max-w-7xl px-4 lg:px-24">
+                  <div class="md:border-l md:border-zinc-100 md:pl-6">
+                    <div class="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+                      <h2 class="font-semibold text-sm md:text-base font-plexmono uppercase">Find me</h2>
+                      <div class="md:col-span-3">
+                        <ul class="space-y-10 md:space-y-12">
+                          <li class="group relative flex flex-col items-start">
+                            <a href="#" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">ben.openshaw@icloud.com</a>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <a href="https://x.com/benopenshaw_" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">X / Twitter</a>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <a href="https://github.com/bopensh" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">Github</a>
+                          </li>
+                          <li class="group relative flex flex-col items-start">
+                            <a href="https://www.linkedin.com/in/ben-openshaw-373526167/" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">Linkedin</a>
+                          </li>  
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </section>
-
-            
-
-      
+              </section>
   </body>
 </html>
-
-
-<a href="#" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">ben.openshaw@icloud.com</a>
-<a href="#" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">ben.openshaw@icloud.com</a>
