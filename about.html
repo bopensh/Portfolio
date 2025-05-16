@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Ben Openshaw</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="./src/main.js"></script>
+    <script src="https://kit.fontawesome.com/23384adc04.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-zinc-50 text-gray-900 antialiased">
+    <div class="bg-white mx-auto max-w-7xl border-l border-r border-zinc-100">
+
+      <!-- Header Section -->
+      <header class="relative top-0 z-50 w-full">
+        <div class="mx-auto max-w-7xl px-4 md:px-10 lg:px-24 py-4 flex justify-between items-center">
+          <div class="flex justify-between items-center">
+            <img src="/src/assets/images/Ben_portfolio_avatar-min.jpg" alt="Portfolio image of Ben Openshaw" class="h-12 w-12 rounded-full object-cover bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm" />
+          </div>
+
+          <!-- Desktop Nav -->
+          <nav class="hidden md:flex space-x-7 text-sm font-medium tracking-wide">
+            <a href="#projects" class="transition hover:text-teal-400 uppercase">Projects</a>
+            <a href="#about" class="transition hover:text-teal-400 uppercase">About</a>
+            <a href="#contact" class="flex items-center gap-2 transition hover:text-teal-400 uppercase">
+              <span>Email Me</span>
+              <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button id="menu-toggle" class="md:hidden flex items-center border border-gray-200 rounded-full px-4 py-[6px] space-x-1 text-sm font-medium uppercase tracking-wide focus:outline-none">
+            <span>Menu</span>
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute left-0 top-full w-full bg-white z-40 md:hidden hidden px-4">
+          <nav class="flex flex-col text-sm font-medium tracking-wide">
+            <a href="#projects" class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400 uppercase transition">Projects</a>
+            <a href="#about" class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400 uppercase transition">About</a>
+            <a href="#contact" class="flex items-center pt-2.5 pb-2.5 gap-2 transition hover:text-teal-400 uppercase">
+              <span>Email Me</span>
+              <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- About Section -->
+      <section class="py-16">
+        <div class="mx-auto max-w-7xl px-4 md:px-10 lg:px-24 flex flex-col items-start">
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
+            
+            <!-- Left Column -->
+            <div>
+              <h1 class="max-w-4xl text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-tight">[Heading Placeholder]</h1>
+              <p class="text-base mb-4">[Paragraph placeholder text. Keep this short for now, just enough to fill visual space.]</p>
+              <p class="text-base mb-4">[Second paragraph placeholder for spacing and layout check.]</p>
+              <p>[Third paragraph with placeholder content.]</p>
+            </div>
+      
+            <!-- Right Column -->
+            <div>
+              <div class="w-full h-96 bg-gray-100"></div>
+              <div class="space-y-10 md:space-y-12">
+                <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
+                  <a href="#" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">ben.openshaw@icloud.com</a>
+                  <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+                <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
+                  <a href="https://www.linkedin.com/in/ben-openshaw-373526167/" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">CV / Linkedin</a>
+                  <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+                <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
+                  <a href="https://github.com/bopensh" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">Github</a>
+                  <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+                <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
+                  <a href="https://x.com/benopenshaw_" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">X / Twitter</a>
+                  <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
+                </div>  
+              </div>
+            </div>
+      
+          </div>
+      
+        </div>
+      </section>
+
+  </body>
+</html>
