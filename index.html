@@ -4,46 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ben Openshaw - Shopify Developer</title>
-    <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet" />
     <script src="./src/main.js"></script>
-    <script src="https://kit.fontawesome.com/23384adc04.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/23384adc04.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Re-initialise Tailwind with: npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
   </head>
   <body class="bg-zinc-50 text-gray-900 antialiased">
     <div class="bg-white mx-auto max-w-7xl border-l border-r border-zinc-100">
-
       <!-- Header Section -->
       <header class="relative top-0 z-50 w-full">
-        <div class="mx-auto max-w-7xl px-4 md:px-10 lg:px-24 py-4 flex justify-between items-center">
+        <div
+          class="mx-auto max-w-7xl px-4 md:px-10 lg:px-24 py-4 flex justify-between items-center border-b border-zinc-100"
+        >
           <div class="flex justify-between items-center">
-            <img src="/src/assets/images/Ben_portfolio_avatar-min.jpg" alt="Portfolio image of Ben Openshaw" class="h-12 w-12 rounded-full object-cover bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm" />
+            <img
+              src="/src/assets/images/Ben_portfolio_avatar-min.jpg"
+              alt="Portfolio image of Ben Openshaw"
+              class="h-12 w-12 rounded-full object-cover bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm"
+            />
           </div>
 
           <!-- Desktop Nav -->
-          <nav class="hidden md:flex space-x-7 text-sm font-medium tracking-wide">
-            <a href="#projects" class="transition hover:text-teal-400 uppercase">Projects</a>
-            <a href="#about" class="transition hover:text-teal-400 uppercase">About</a>
-            <a href="#contact" class="flex items-center gap-2 transition hover:text-teal-400 uppercase">
+          <nav
+            class="hidden md:flex space-x-7 text-sm font-medium tracking-wide"
+          >
+            <a href="#about" class="transition hover:text-teal-400 uppercase"
+              >About
+            </a>
+            <div class="transition uppercase">
+              <span> Projects </span>
+              <span class="font-plexmono text-teal-400 text-xs">[Coming Soon]</span>
+            </div>
+            <a
+              href="#contact"
+              class="flex items-center gap-2 transition hover:text-teal-400 uppercase"
+            >
               <span>Email Me</span>
               <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
             </a>
           </nav>
 
           <!-- Mobile Menu Button -->
-          <button id="menu-toggle" class="md:hidden flex items-center border border-gray-200 rounded-full px-4 py-[6px] space-x-1 text-sm font-medium uppercase tracking-wide focus:outline-none">
+          <button
+            id="menu-toggle"
+            class="md:hidden flex items-center border border-gray-200 rounded-full px-4 py-[6px] space-x-1 text-sm font-medium uppercase tracking-wide focus:outline-none"
+          >
             <span>Menu</span>
-            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+            <svg
+              class="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
               <path d="M19 9l-7 7-7-7" />
             </svg>
           </button>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="absolute left-0 top-full w-full bg-white z-40 md:hidden hidden px-4">
+        <div
+          id="mobile-menu"
+          class="absolute left-0 top-full w-full bg-white z-40 md:hidden hidden px-4"
+        >
           <nav class="flex flex-col text-sm font-medium tracking-wide">
-            <a href="#projects" class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400 uppercase transition">Projects</a>
-            <a href="#about" class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400 uppercase transition">About</a>
-            <a href="#contact" class="flex items-center pt-2.5 pb-2.5 gap-2 transition hover:text-teal-400 uppercase">
+            <a
+              href="#projects"
+              class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400 uppercase transition"
+              >About</a
+            >
+            <div
+              class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400 uppercase transition"
+            >
+              <span> Projects </span>
+              <span class="font-plexmono text-teal-400 text-xs">[Coming Soon]</span>
+            </div>
+            <a
+              href="#contact"
+              class="flex items-center pt-2.5 pb-2.5 gap-2 transition hover:text-teal-400 uppercase"
+            >
               <span>Email Me</span>
               <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
             </a>
@@ -53,154 +97,327 @@
 
       <!-- Hero Section -->
       <section class="py-16">
-          <div class="mx-auto max-w-7xl px-4 md:px-10 lg:px-24 flex flex-col items-start">
-            <!-- Profile Image -->
-            <!-- <img src="/src/assets/images/Ben_portfolio_avatar-min.jpg" alt="Portfolio image of Ben Openshaw" class="h-16 w-16 rounded-full object-cover mb-6" /> -->
-            <!-- Headline -->
-            <h1 class="max-w-4xl text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-tight
-            ">
-              Ben Openshaw | Shopify Developer | Based in Surrey, UK. 
-            </h1>
-            <!-- Description -->
-            <p class="text-base max-w-3xl mb-6">
-              I work with Shopify merchants to build, customise, and maintain their storefronts. Continue reading below for an overview of the services I can help with.
-            </p>
-            <!-- Social Icons -->
-            <div class="flex justify-center gap-6 text-gray-500 text-xl">
-              <a href="#" class="hover:text-gray-900" aria-label="Mail"><i class="fa-solid fa-square-envelope"></i></a>
-              <a href="#" class="hover:text-gray-900" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="#" class="hover:text-gray-900" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-              <a href="#" class="hover:text-gray-900" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
-              
-            </div>
+        <div
+          class="mx-auto max-w-7xl px-4 md:px-10 lg:px-24 flex flex-col items-start"
+        >
+          <!-- Profile Image -->
+          <!-- <img src="/src/assets/images/Ben_portfolio_avatar-min.jpg" alt="Portfolio image of Ben Openshaw" class="h-16 w-16 rounded-full object-cover mb-6" /> -->
+          <!-- Headline -->
+          <h1
+            class="max-w-4xl text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-tight"
+          >
+            Ben Openshaw | Shopify Developer | Based in Surrey, UK.
+          </h1>
+          <!-- Description -->
+          <p class="text-base max-w-3xl mb-6">
+            I work with Shopify merchants to build, customise, and maintain
+            their e-commerce storefronts. Continue reading below for an overview
+            of the services I can help with.
+          </p>
+          <!-- Social Icons -->
+          <div class="flex justify-center gap-6 text-gray-500 text-xl">
+            <a href="#" class="hover:text-gray-900" aria-label="Mail"
+              ><i class="fa-solid fa-square-envelope"></i
+            ></a>
+            <a href="#" class="hover:text-gray-900" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#" class="hover:text-gray-900" aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="#" class="hover:text-gray-900" aria-label="X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Services Section -->
-        <section class="pb-16">
-          <div class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24">
-            <div class="md:border-l md:border-zinc-100 md:pl-6">
-              <div class="grid grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
-                <h2 class="font-semibold text-base font-plexmono uppercase">I can help with</h2>
-                <div class="md:col-span-3">
-                  <div class="space-y-8 md:space-y-10">
-                    <div class="group relative flex flex-col items-start">
-                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Shopify Store Setup & Migrations</h3>
-                      <p class="relative z-10 mt-2 text-sm">Store setup and migrations from other platforms, including theme configuration, data import, and launch preparation.</p>
-                    </div>
-                    <div class="group relative flex flex-col items-start">
-                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Theme Customisation</h3>
-                      <p class="relative z-10 mt-2 text-sm">Theme customisation based on provided designs or brand guidelines, including layout changes, styling, and section development.</p>
-                    </div>
-                    <div class="group relative flex flex-col items-start">
-                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Apps & Integrations</h3>
-                      <p class="relative z-10 mt-2 text-sm">App installation and configuration to support reviews, subscriptions, marketing, or other integrations.</p>
-                    </div>
-                    <div class="group relative flex flex-col items-start">
-                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Ongoing Maintenance & Training</h3>
-                      <p class="relative z-10 mt-2 text-sm">Ongoing support and store maintenance, problem resolution, content updates, and team training.</p>
-                    </div>
-                    <div class="group relative flex flex-col items-start">
-                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Fixes & Troubleshooting</h3>
-                      <p class="relative z-10 mt-2 text-sm">Technical troubleshooting and fixes for layout issues, theme errors, or app-related problems.</p>
-                    </div>
+      <!-- Services Section -->
+      <section class="pb-16">
+        <div class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24">
+          <div class="md:border-l md:border-zinc-100 md:pl-6">
+            <div class="grid grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+              <h2 class="font-semibold text-base font-plexmono uppercase">
+                I can help with
+              </h2>
+              <div class="md:col-span-3">
+                <div class="space-y-8 md:space-y-10">
+                  <div class="group relative flex flex-col items-start">
+                    <h3
+                      class="font-semibold uppercase text-sm md:text-base tracking-wide"
+                    >
+                      Shopify Store Setup & Migrations
+                    </h3>
+                    <p class="relative z-10 mt-2 text-sm">
+                      Store setup and migrations from other platforms, including
+                      theme configuration, data import, and launch preparation.
+                    </p>
+                  </div>
+                  <div class="group relative flex flex-col items-start">
+                    <h3
+                      class="font-semibold uppercase text-sm md:text-base tracking-wide"
+                    >
+                      Theme Customisation
+                    </h3>
+                    <p class="relative z-10 mt-2 text-sm">
+                      Theme customisation based on provided designs or brand
+                      guidelines, including layout changes, styling, and section
+                      development.
+                    </p>
+                  </div>
+                  <div class="group relative flex flex-col items-start">
+                    <h3
+                      class="font-semibold uppercase text-sm md:text-base tracking-wide"
+                    >
+                      Apps & Integrations
+                    </h3>
+                    <p class="relative z-10 mt-2 text-sm">
+                      App installation and configuration to support reviews,
+                      subscriptions, marketing, or other integrations.
+                    </p>
+                  </div>
+                  <div class="group relative flex flex-col items-start">
+                    <h3
+                      class="font-semibold uppercase text-sm md:text-base tracking-wide"
+                    >
+                      Ongoing Maintenance & Training
+                    </h3>
+                    <p class="relative z-10 mt-2 text-sm">
+                      Ongoing support and store maintenance, problem resolution,
+                      content updates, and team training.
+                    </p>
+                  </div>
+                  <div class="group relative flex flex-col items-start">
+                    <h3
+                      class="font-semibold uppercase text-sm md:text-base tracking-wide"
+                    >
+                      Fixes & Troubleshooting
+                    </h3>
+                    <p class="relative z-10 mt-2 text-sm">
+                      Technical troubleshooting and fixes for layout issues,
+                      theme errors, or app-related problems.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Projects Section -->
-        <section class="pb-16">
-          <div class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24">
-            <div class="md:border-l md:border-zinc-100 md:pl-6">
-              <div class="grid grid-cols-1 items-start gap-y-8 md:grid-cols-4">
-                <h2 class="font-semibold text-base font-plexmono uppercase">Projects</h2>
-                <div class="md:col-span-3">
-                  <div class="space-y-10 md:space-y-12">
-                    <div class="group relative flex flex-col items-start">
-                      <!-- <div class="absolute -inset-x-8 -inset-y-6 lg:rounded scale-95 bg-zinc-50 opacity-0 transition lg:group-hover:scale-100 lg:group-hover:opacity-100 ease-in-out"></div> -->
-                      <div class="grid grid-cols-1 gap-y-4 mb-5 md:grid-cols-2 md:gap-x-4">
-                        <img src="./src/assets/images/Portfolio_mockup_placeholder.jpg" alt="placeholder" class="w-full h-auto"/>
-                        <img src="./src/assets/images/Portfolio_mockup_placeholder.jpg" alt="placeholder" class="w-full h-auto"/>
-                      </div>
-                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Boardhaus</h3>
-                      <p class="mt-2 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente magni facilis consequatur placeat nostrum.</p>
-                      <a href="https://www.hersey.co.uk" class="mt-5 flex items-center gap-2 text-sm font-semibold tracking-wide
-                      uppercase text-teal-400">
-                        <div>View project</div>
-                        <i class="fa-solid fa-angle-right"></i>
-                      </a>
+      <!-- Projects Section -->
+      <section class="pb-16">
+        <div class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24">
+          <div class="md:border-l md:border-zinc-100 md:pl-6">
+            <div class="grid grid-cols-1 items-start gap-y-8 md:grid-cols-4">
+              <h2 class="font-semibold text-base font-plexmono uppercase">
+                Projects
+              </h2>
+              <div class="md:col-span-3">
+                <div class="space-y-10 md:space-y-12">
+                  <div class="group relative flex flex-col items-start">
+                    <!-- <div class="absolute -inset-x-8 -inset-y-6 lg:rounded scale-95 bg-zinc-50 opacity-0 transition lg:group-hover:scale-100 lg:group-hover:opacity-100 ease-in-out"></div> -->
+                    <div
+                      class="grid grid-cols-1 gap-y-4 mb-5 md:grid-cols-2 md:gap-x-4"
+                    >
+                      <img
+                        src="./src/assets/images/Portfolio_mockup_placeholder.jpg"
+                        alt="placeholder"
+                        class="w-full h-auto"
+                      />
+                      <img
+                        src="./src/assets/images/Portfolio_mockup_placeholder.jpg"
+                        alt="placeholder"
+                        class="w-full h-auto"
+                      />
                     </div>
-                    <div class="group relative flex flex-col items-start">
-                      <!-- <div class="absolute -inset-x-8 -inset-y-6 lg:rounded scale-95 bg-zinc-50 opacity-0 transition lg:group-hover:scale-100 lg:group-hover:opacity-100 ease-in-out"></div> -->
-                      <div class="grid grid-cols-1 gap-y-4 mb-5 md:grid-cols-2 md:gap-x-4">
-                        <img src="./src/assets/images/Portfolio_mockup_placeholder.jpg" alt="placeholder" class="w-full h-auto"/>
-                        <img src="./src/assets/images/Portfolio_mockup_placeholder.jpg" alt="placeholder" class="w-full h-auto"/>
-                      </div>
-                      <h3 class="font-semibold uppercase text-sm md:text-base tracking-wide">Hersey & Son Silversmiths</h3>
-                      <p class="mt-2 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente magni facilis consequatur placeat nostrum.</p>
-                      <a href="https://www.hersey.co.uk" class="mt-5 flex items-center gap-2 text-sm font-semibold tracking-wide
-                      uppercase text-teal-400">
-                        <div>View project</div>
-                        <i class="fa-solid fa-angle-right"></i>
-                      </a>
-                    </div>  
+                    <h3
+                      class="font-semibold uppercase text-sm md:text-base tracking-wide"
+                    >
+                      Boardhaus
+                    </h3>
+                    <p class="mt-2 text-sm">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sapiente magni facilis consequatur placeat nostrum.
+                    </p>
+                    <a
+                      href="https://www.hersey.co.uk"
+                      class="mt-5 flex items-center gap-2 text-sm font-semibold tracking-wide uppercase text-teal-400"
+                    >
+                      <!-- <div>View project</div> -->
+                      <div>[Coming Soon]</div>
+                      <!-- <i class="fa-solid fa-angle-right"></i> -->
+                    </a>
+                  </div>
+                  <div class="group relative flex flex-col items-start">
+                    <!-- <div class="absolute -inset-x-8 -inset-y-6 lg:rounded scale-95 bg-zinc-50 opacity-0 transition lg:group-hover:scale-100 lg:group-hover:opacity-100 ease-in-out"></div> -->
+                    <div
+                      class="grid grid-cols-1 gap-y-4 mb-5 md:grid-cols-2 md:gap-x-4"
+                    >
+                      <img
+                        src="./src/assets/images/Portfolio_mockup_placeholder.jpg"
+                        alt="placeholder"
+                        class="w-full h-auto"
+                      />
+                      <img
+                        src="./src/assets/images/Portfolio_mockup_placeholder.jpg"
+                        alt="placeholder"
+                        class="w-full h-auto"
+                      />
+                    </div>
+                    <h3
+                      class="font-semibold uppercase text-sm md:text-base tracking-wide"
+                    >
+                      Hersey & Son Silversmiths
+                    </h3>
+                    <p class="mt-2 text-sm">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sapiente magni facilis consequatur placeat nostrum.
+                    </p>
+                    <a
+                      href="https://www.hersey.co.uk"
+                      class="mt-5 flex items-center gap-2 text-sm font-semibold tracking-wide uppercase text-teal-400"
+                    >
+                      <!-- <div>View project</div> -->
+                      <div>[Coming Soon]</div>
+                      <!-- <i class="fa-solid fa-angle-right"></i> -->
+                    </a>
+                  </div>
+                  <div class="group relative flex flex-col items-start">
+                    <!-- <div class="absolute -inset-x-8 -inset-y-6 lg:rounded scale-95 bg-zinc-50 opacity-0 transition lg:group-hover:scale-100 lg:group-hover:opacity-100 ease-in-out"></div> -->
+                    <div
+                      class="grid grid-cols-1 gap-y-4 mb-5 md:grid-cols-2 md:gap-x-4"
+                    >
+                      <img
+                        src="./src/assets/images/Portfolio_mockup_placeholder.jpg"
+                        alt="placeholder"
+                        class="w-full h-auto"
+                      />
+                      <img
+                        src="./src/assets/images/Portfolio_mockup_placeholder.jpg"
+                        alt="placeholder"
+                        class="w-full h-auto"
+                      />
+                    </div>
+                    <h3
+                      class="font-semibold uppercase text-sm md:text-base tracking-wide"
+                    >
+                      My Portfolio
+                    </h3>
+                    <p class="mt-2 text-sm">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Sapiente magni facilis consequatur placeat nostrum.
+                    </p>
+                    <a
+                      href="https://www.hersey.co.uk"
+                      class="mt-5 flex items-center gap-2 text-sm font-semibold tracking-wide uppercase text-teal-400"
+                    >
+                      <!-- <div>View project</div> -->
+                      <div>View on Github</div>
+                      <i class="fa-solid fa-angle-right"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Contact Section -->
-        <section class="pb-16">
-          <div class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24">
-            <div class="md:border-l md:border-zinc-100 md:pl-6">
-              <div class="grid grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
-                <h2 class="font-semibold text-base font-plexmono uppercase">Find me</h2>
-                <div class="md:col-span-3">
-                  <div class="space-y-10 md:space-y-12">
-                    <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
-                      <a href="#" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">ben.openshaw@icloud.com</a>
-                      <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-                    <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
-                      <a href="https://www.linkedin.com/in/ben-openshaw-373526167/" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">CV / Linkedin</a>
-                      <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-                    <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
-                      <a href="https://github.com/bopensh" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">Github</a>
-                      <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-                    <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
-                      <a href="https://x.com/benopenshaw_" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">X / Twitter</a>
-                      <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>  
+      <!-- Contact Section -->
+      <section class="pb-16">
+        <div class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24">
+          <div class="md:border-l md:border-zinc-100 md:pl-6">
+            <div class="grid grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+              <h2 class="font-semibold text-base font-plexmono uppercase">
+                Find me
+              </h2>
+              <div class="md:col-span-3">
+                <div class="space-y-10 md:space-y-12">
+                  <div
+                    class="group relative flex items-center w-max gap-2 transition hover:text-teal-400"
+                  >
+                    <a
+                      href="mailto:ben.openshaw@icloud.com"
+                      class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide"
+                      >ben.openshaw@icloud.com</a
+                    >
+                    <i
+                      class="text-xs fa-solid fa-arrow-up-right-from-square"
+                    ></i>
+                  </div>
+                  <div
+                    class="group relative flex items-center w-max gap-2 transition hover:text-teal-400"
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/ben-openshaw-373526167/"
+                      class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide"
+                      >CV / Linkedin</a
+                    >
+                    <i
+                      class="text-xs fa-solid fa-arrow-up-right-from-square"
+                    ></i>
+                  </div>
+                  <div
+                    class="group relative flex items-center w-max gap-2 transition hover:text-teal-400"
+                  >
+                    <a
+                      href="https://github.com/bopensh"
+                      class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide"
+                      >Github</a
+                    >
+                    <i
+                      class="text-xs fa-solid fa-arrow-up-right-from-square"
+                    ></i>
+                  </div>
+                  <div
+                    class="group relative flex items-center w-max gap-2 transition hover:text-teal-400"
+                  >
+                    <a
+                      href="https://x.com/benopenshaw_"
+                      class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide"
+                      >X / Twitter</a
+                    >
+                    <i
+                      class="text-xs fa-solid fa-arrow-up-right-from-square"
+                    ></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- Footer Section -->
-         <footer>
-          <div class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24 border-t border-zinc-100">
-            <div class="pt-16 pb-16">
-              <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
-                <div class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium tracking-wide">
-                   <a href="#" class="transition hover:text-teal-400 uppercase">Projects</a>
-                   <a href="#" class="transition hover:text-teal-400 uppercase">About</a>
-                   <a href="#" class="transition hover:text-teal-400 uppercase">Email Me</a>
-                </div>
-                <p class="text-sm text-zinc-400">© 2025 Ben Openshaw. All rights reserved.</p>
+      <!-- Footer Section -->
+      <footer>
+        <div
+          class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24 border-t border-zinc-100"
+        >
+          <div class="pt-16 pb-16">
+            <div
+              class="flex flex-col items-center justify-between gap-6 md:flex-row"
+            >
+              <div
+                class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium tracking-wide"
+              >
+                <a href="#" class="transition hover:text-teal-400 uppercase"
+                  >Projects</a
+                >
+                <a href="#" class="transition hover:text-teal-400 uppercase"
+                  >About</a
+                >
+                <a href="#" class="transition hover:text-teal-400 uppercase"
+                  >Email Me</a
+                >
               </div>
+              <p class="text-sm text-zinc-400">
+                © 2025 Ben Openshaw. All rights reserved.
+              </p>
             </div>
           </div>
-         </footer>
-
-    </div> 
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
