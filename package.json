@@ -4,5 +4,23 @@
   },
   "devDependencies": {
     "tailwindcss": "^4.1.6"
-  }
+  },
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bopensh/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bopensh/Portfolio/issues"
+  },
+  "homepage": "https://github.com/bopensh/Portfolio#readme",
+  "description": ""
 }
