@@ -20,26 +20,30 @@
           class="mx-auto max-w-7xl px-4 md:px-10 lg:px-24 py-4 flex justify-between items-center border-b border-zinc-100"
         >
           <div class="flex justify-between items-center">
-            <img
-              src="/src/assets/images/Ben_portfolio_avatar-min.jpg"
-              alt="Portfolio image of Ben Openshaw"
-              class="h-12 w-12 rounded-full object-cover bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm"
-            />
+            <a href="./index.html">
+              <img
+                src="/src/assets/images/Ben_portfolio_avatar-min.jpg"
+                alt="Portfolio image of Ben Openshaw"
+                class="h-12 w-12 rounded-full object-cover bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm"
+              />
+            </a>
           </div>
 
           <!-- Desktop Nav -->
           <nav
             class="hidden md:flex space-x-7 text-sm font-medium tracking-wide"
           >
-            <a href="#about" class="transition hover:text-teal-400 uppercase"
-              >About
-            </a>
-            <div class="transition uppercase">
-              <span> Projects </span>
-              <span class="font-plexmono text-teal-400 text-xs">[Coming Soon]</span>
-            </div>
             <a
-              href="#contact"
+              href="./about.html"
+              class="transition hover:text-teal-400 uppercase"
+            >
+              About
+            </a>
+            <!-- <a href="" class="transition hover:text-teal-400 uppercase">
+              Projects
+            </a> -->
+            <a
+              href="mailto:ben.openshaw@icloud.com"
               class="flex items-center gap-2 transition hover:text-teal-400 uppercase"
             >
               <span>Email Me</span>
@@ -74,18 +78,17 @@
         >
           <nav class="flex flex-col text-sm font-medium tracking-wide">
             <a
-              href="#projects"
+              href="./about.html"
               class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400 uppercase transition"
               >About</a
             >
-            <div
-              class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400 uppercase transition"
+            <!-- <a
+              href="" class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400 uppercase transition"
             >
-              <span> Projects </span>
-              <span class="font-plexmono text-teal-400 text-xs">[Coming Soon]</span>
-            </div>
+            Projects
+            </a> -->
             <a
-              href="#contact"
+              href="mailto:ben.openshaw@icloud.com"
               class="flex items-center pt-2.5 pb-2.5 gap-2 transition hover:text-teal-400 uppercase"
             >
               <span>Email Me</span>
@@ -111,8 +114,8 @@
           <!-- Description -->
           <p class="text-base leading-7 max-w-3xl mb-6">
             I work with Shopify merchants to build, customise, and maintain
-            their e-commerce storefronts. Continue reading below for an overview
-            of the services I can help with.
+            their e-commerce stores. Continue reading below for an overview of
+            the services I can help with.
           </p>
           <!-- Social Icons -->
           <div class="flex justify-center gap-6 text-gray-500 text-xl">
@@ -198,6 +201,16 @@
                       theme errors, or app-related problems.
                     </p>
                   </div>
+                  <a
+                    href="https://github.com/bopensh/Portfolio"
+                    target="_blank"
+                    class="flex items-center gap-2 text-teal-400 text-sm font-semibold tracking-wide uppercase w-max"
+                  >
+                    <div class="font-plexmono">Email me</div>
+                    <i
+                      class="text-xs fa-solid fa-arrow-up-right-from-square"
+                    ></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -240,14 +253,11 @@
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Sapiente magni facilis consequatur placeat nostrum.
                     </p>
-                    <a
-                      href="https://www.hersey.co.uk"
+                    <div
                       class="mt-5 flex items-center gap-2 text-sm font-semibold tracking-wide uppercase text-teal-400"
                     >
-                      <!-- <div>View project</div> -->
-                      <div>[Coming Soon]</div>
-                      <!-- <i class="fa-solid fa-angle-right"></i> -->
-                    </a>
+                      <div class="font-plexmono">[More info soon]</div>
+                    </div>
                   </div>
                   <div class="group relative flex flex-col items-start">
                     <!-- <div class="absolute -inset-x-8 -inset-y-6 lg:rounded scale-95 bg-zinc-50 opacity-0 transition lg:group-hover:scale-100 lg:group-hover:opacity-100 ease-in-out"></div> -->
@@ -274,14 +284,11 @@
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Sapiente magni facilis consequatur placeat nostrum.
                     </p>
-                    <a
-                      href="https://www.hersey.co.uk"
+                    <div
                       class="mt-5 flex items-center gap-2 text-sm font-semibold tracking-wide uppercase text-teal-400"
                     >
-                      <!-- <div>View project</div> -->
-                      <div>[Coming Soon]</div>
-                      <!-- <i class="fa-solid fa-angle-right"></i> -->
-                    </a>
+                      <div class="font-plexmono">[More info soon]</div>
+                    </div>
                   </div>
                   <div class="group relative flex flex-col items-start">
                     <!-- <div class="absolute -inset-x-8 -inset-y-6 lg:rounded scale-95 bg-zinc-50 opacity-0 transition lg:group-hover:scale-100 lg:group-hover:opacity-100 ease-in-out"></div> -->
@@ -308,14 +315,23 @@
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Sapiente magni facilis consequatur placeat nostrum.
                     </p>
-                    <a
-                      href="https://www.hersey.co.uk"
-                      class="mt-5 flex items-center gap-2 text-sm font-semibold tracking-wide uppercase text-teal-400"
+                    <div
+                      class="mt-5 flex gap-6 text-sm font-semibold tracking-wide uppercase"
                     >
-                      <!-- <div>View project</div> -->
-                      <div>View on Github</div>
-                      <i class="fa-solid fa-angle-right"></i>
-                    </a>
+                      <div class="font-plexmono text-teal-400">
+                        [More info soon]
+                      </div>
+                      <a
+                        href="https://github.com/bopensh/Portfolio"
+                        target="_blank"
+                        class="flex items-center gap-2 text-teal-400"
+                      >
+                        <div class="font-plexmono">View on Github</div>
+                        <i
+                          class="text-xs fa-solid fa-arrow-up-right-from-square"
+                        ></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -351,6 +367,7 @@
                   >
                     <a
                       href="https://www.linkedin.com/in/ben-openshaw-373526167/"
+                      target="_blank"
                       class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide"
                       >CV / Linkedin</a
                     >
@@ -363,6 +380,7 @@
                   >
                     <a
                       href="https://github.com/bopensh"
+                      target="_blank"
                       class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide"
                       >Github</a
                     >
@@ -375,6 +393,7 @@
                   >
                     <a
                       href="https://x.com/benopenshaw_"
+                      target="_blank"
                       class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide"
                       >X / Twitter</a
                     >
@@ -401,15 +420,19 @@
               <div
                 class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium tracking-wide"
               >
-                <a href="#" class="transition hover:text-teal-400 uppercase"
-                  >Projects</a
-                >
-                <a href="#" class="transition hover:text-teal-400 uppercase"
+                <!-- <a href="#" class="transition hover:text-teal-400 uppercase">Projects</a> -->
+                <a
+                  href="./about.html"
+                  class="transition hover:text-teal-400 uppercase"
                   >About</a
                 >
-                <a href="#" class="transition hover:text-teal-400 uppercase"
-                  >Email Me</a
+                <a
+                  href="mailto:ben.openshaw@icloud.com"
+                  class="flex items-center gap-2 transition hover:text-teal-400 uppercase"
                 >
+                  <span>Email Me</span>
+                  <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
               </div>
               <p class="text-sm text-zinc-400">
                 © 2025 Ben Openshaw. All rights reserved.
