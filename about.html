@@ -15,7 +15,7 @@
         <div
           class="mx-auto max-w-7xl px-4 md:px-10 lg:px-24 py-4 flex justify-between items-center border-b border-zinc-100"
         >
-          <div class="flex justify-between items-center">
+          <div class="flex justify-between items-center text-base font-medium">
             <a href="./index.html">
               <img
                 src="/src/assets/images/Ben_portfolio_avatar-min.jpg"
@@ -27,19 +27,19 @@
 
           <!-- Desktop Nav -->
           <nav
-            class="hidden md:flex space-x-7 text-sm font-medium tracking-wide"
+            class="hidden md:flex space-x-7 text-base"
           >
-            <a href="./about.html" class="transition hover:text-teal-400 uppercase"
-              >About
+            <a
+              href="./about.html"
+              class="transition hover:text-teal-400"
+            >
+              About
             </a>
-            <!-- <a href="" class="transition hover:text-teal-400 uppercase">
-              Projects
-            </a> -->
             <a
               href="mailto:ben.openshaw@icloud.com"
-              class="flex items-center gap-2 transition hover:text-teal-400 uppercase"
+              class="flex items-center gap-2 transition hover:text-teal-400"
             >
-              <span>Email Me</span>
+              <span>Contact</span>
               <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
             </a>
           </nav>
@@ -47,7 +47,7 @@
           <!-- Mobile Menu Button -->
           <button
             id="menu-toggle"
-            class="md:hidden flex items-center border border-gray-200 rounded-full px-4 py-[6px] space-x-1 text-sm font-medium uppercase tracking-wide focus:outline-none"
+            class="md:hidden flex items-center border border-gray-200 rounded-full px-4 py-[6px] space-x-1 text-base focus:outline-none"
           >
             <span>Menu</span>
             <svg
@@ -69,87 +69,119 @@
           id="mobile-menu"
           class="absolute left-0 top-full w-full bg-white z-40 md:hidden hidden px-4"
         >
-          <nav class="flex flex-col text-sm font-medium tracking-wide">
+          <nav class="flex flex-col text-base">
             <a
               href="./about.html"
-              class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400 uppercase transition"
+              class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400"
               >About</a
             >
-            <!-- <a
-              href="" class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400 uppercase transition"
-            >
-            Projects
-            </a> -->
             <a
               href="mailto:ben.openshaw@icloud.com"
-              class="flex items-center pt-2.5 pb-2.5 gap-2 transition hover:text-teal-400 uppercase"
+              class="flex items-center pt-2.5 pb-2.5 gap-2 transition hover:text-teal-400"
             >
-              <span>Email Me</span>
+              <span>Contact</span>
               <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
             </a>
           </nav>
         </div>
       </header>
 
-      <!-- About Section -->
+       <!-- Hero Section -->
       <section class="py-12 lg:py-16">
         <div class="mx-auto max-w-7xl px-4 md:px-10 lg:px-24 flex flex-col items-start">
           
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 w-full items-center">
             
             <!-- Left Column -->
             <div>
               <img src="/src/assets/images/Ben_portfolio.jpg" alt="Photo of Ben Openshaw" class="w-full h-auto object-cover mb-12 block lg:hidden" />
               <h1 class="max-w-4xl text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-tight">About Me</h1>
-              <p class="text-sm mb-4 leading-7">I’m Ben Openshaw, a Shopify Expert based in Surrey, UK. I work with merchants to build, customise, and maintain their e-commerce stores. I focus on builds that are professional, reliable and straight-forward to manage.</p>
-              <p class=" text-sm mb-4 leading-7">My background includes several tech-related roles at companies such as Creative Artists Agency, Starling Bank, and Harlequins Rugby Club. I began learning some code during the pandemic and became interested in front-end development - particularly within the e-commerce space. I now work as the E-commerce Manager at Hersey & Son Silversmiths, a Shopify Plus merchant, where I oversee the online store and lead on projects across Shopify.</p>
-              <p class="text-sm mb-4 leading-7">In addition to this, I enjoy working on freelance projects with local Shopify merchants - helping them launch new stores, customise themes, and implement features that improve their customer experience and day-to-day operations. I’m always looking for opportunities to support small businesses and apply my skills to projects that have a real impact.</p>
-              <p class="text-sm leading-7">Please get in touch if you would like to work together. You can email me directly or contact me via LinkedIn.</p>
+              <p class="text-base leading-7 max-w-3xl mb-6 text-zinc-600"">I’m Ben Openshaw, an Ecommerce Manager for a successful Shopify Plus store. I also help local merchants on a freelance basis, providing technical and operational support for their Shopify stores. Based in Hampton Court, Surrey.</p>
             </div>
       
             <!-- Right Column -->
             <div class="lg:pl-16">
               <img src="/src/assets/images/Ben_portfolio.jpg" alt="Photo of Ben Openshaw" class="w-full h-auto object-cover mb-12 lg:mb-16 hidden lg:block" />
-              <div class="space-y-10 md:space-y-12">
-                <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
-                  <a href="mailto:ben.openshaw@icloud.com" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">ben.openshaw@icloud.com</a>
-                  <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="pb-12 lg:pb-16">
+        <div class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24">
+          <div class="md:border-l md:border-zinc-100 md:pl-6">
+            <div class="grid grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+              <h2 class="text-base">
+                Contact
+              </h2>
+              <div class="md:col-span-3">
+                <div class="space-y-4 md:space-y-6">
+                  <div
+                    class="group relative flex items-center w-max gap-2 transition text-zinc-600 hover:text-teal-400"
+                  >
+                    <a
+                      href="mailto:ben.openshaw@icloud.com"
+                      class="space-y-1 text-base"
+                      >ben.openshaw@icloud.com</a
+                    >
+                    <i
+                      class="text-xs fa-solid fa-arrow-up-right-from-square"
+                    ></i>
+                  </div>
+                  <div
+                    class="group relative flex items-center w-max gap-2 transition text-zinc-600 hover:text-teal-400"
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/ben-openshaw-373526167/"
+                      target="_blank"
+                      class="space-y-1 text-base"
+                      >CV / Linkedin</a
+                    >
+                    <i
+                      class="text-xs fa-solid fa-arrow-up-right-from-square"
+                    ></i>
+                  </div>
                 </div>
-                <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
-                  <a href="https://www.linkedin.com/in/ben-openshaw-373526167/" target="_blank" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">CV / Linkedin</a>
-                  <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
-                </div>
-                <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
-                  <a href="https://github.com/bopensh" target="_blank" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">Github</a>
-                  <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
-                </div>
-                <div class="group relative flex items-center w-max gap-2 transition hover:text-teal-400">
-                  <a href="https://x.com/benopenshaw_" target="_blank" class="space-y-1 font-semibold uppercase text-sm md:text-base tracking-wide">X / Twitter</a>
-                  <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
-                </div>  
               </div>
             </div>
           </div>
         </div>
       </section>
-      
-        <!-- Footer Section -->
-        <footer>
-        <div class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24 border-t border-zinc-100">
-            <div class="pt-16 pb-16">
-            <div class="flex flex-col items-center justify-between gap-6 md:flex-row">
-                <div class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium tracking-wide">
-                    <!-- <a href="#" class="transition hover:text-teal-400 uppercase">Projects</a> -->
-                    <a href="./about.html" class="transition hover:text-teal-400 uppercase">About</a>
-                    <a href="mailto:ben.openshaw@icloud.com" class="flex items-center gap-2 transition hover:text-teal-400 uppercase">
-                      <span>Email Me</span>
-                      <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
-                <p class="text-sm text-zinc-400">© 2025 Ben Openshaw. All rights reserved.</p>
+
+      <!-- Footer Section -->
+      <footer>
+        <div
+          class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24 border-t border-zinc-100"
+        >
+          <div class="pt-16 pb-16">
+            <div
+              class="flex flex-col items-center justify-between gap-6 md:flex-row"
+            >
+              <div
+                class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-base"
+              >
+                <!-- <a href="#" class="transition hover:text-teal-400 uppercase">Projects</a> -->
+                <a
+                  href="./about.html"
+                  class="transition hover:text-teal-400"
+                  >About</a
+                >
+                <a
+                  href="mailto:ben.openshaw@icloud.com"
+                  class="flex items-center gap-2 transition hover:text-teal-400"
+                >
+                  <span>Contact</span>
+                  <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+              <p class="text-base text-zinc-400">
+                © 2026 Ben Openshaw. All rights reserved.
+              </p>
             </div>
-            </div>
+          </div>
         </div>
-        </footer>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
