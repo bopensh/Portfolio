@@ -8,79 +8,123 @@
     <script src="./src/main.js"></script>
     <script src="https://kit.fontawesome.com/23384adc04.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-zinc-50 text-gray-900 antialiased">
-    <div class="bg-white mx-auto max-w-7xl border-l border-r border-zinc-100">
+<body class="bg-zinc-50 text-gray-900 antialiased dark:bg-zinc-900 dark:text-zinc-400">
+    <div class="bg-white mx-auto max-w-7xl border-l border-r border-zinc-100 dark:bg-zinc-900 dark:border-zinc-700/40">
       <!-- Header Section -->
       <header class="relative top-0 z-50 w-full">
         <div
-          class="mx-auto max-w-7xl px-4 md:px-10 lg:px-24 py-4 flex justify-between items-center border-b border-zinc-100"
+          class="mx-auto max-w-7xl px-4 md:px-10 lg:px-24 py-4 flex justify-between items-center border-b border-zinc-100 dark:border-zinc-700/40"
         >
           <div class="flex justify-between items-center text-base font-medium">
             <a href="./index.html">
               <img
                 src="/src/assets/images/Ben_portfolio_avatar-min.jpg"
                 alt="Portfolio image of Ben Openshaw"
-                class="h-12 w-12 rounded-full object-cover bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm"
+                class="h-12 w-12 rounded-full object-cover bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10"
               />
             </a>
           </div>
 
-          <!-- Desktop Nav -->
-          <nav
-            class="hidden md:flex space-x-7 text-base"
-          >
-            <a
-              href="./about.html"
-              class="transition hover:text-teal-400"
-            >
-              About
-            </a>
-            <a
-              href="mailto:ben.openshaw@icloud.com"
-              class="flex items-center gap-2 transition hover:text-teal-400"
-            >
-              <span>Contact</span>
-              <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </nav>
+          <div class="flex items-center gap-4">
 
-          <!-- Mobile Menu Button -->
-          <button
-            id="menu-toggle"
-            class="md:hidden flex items-center border border-gray-200 rounded-full px-4 py-[6px] space-x-1 text-base focus:outline-none"
-          >
-            <span>Menu</span>
-            <svg
-              class="h-4 w-4"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+            <!-- Desktop Nav -->
+            <nav
+              class="hidden md:flex space-x-7 text-base"
             >
-              <path d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
+              <a
+                href="./about.html"
+                class="transition hover:text-teal-400 dark:text-zinc-200 dark:hover:text-teal-400"
+              >
+                About
+              </a>
+              <a
+                href="mailto:ben.openshaw@icloud.com"
+                class="transition hover:text-teal-400 dark:text-zinc-200 dark:hover:text-teal-400"
+              >
+                Contact
+              </a>
+            </nav>
+
+            <!-- Theme Toggle -->
+            <button
+              id="theme-toggle"
+              class="cursor-pointer group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur-sm transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
+              aria-label="Toggle dark mode"
+            >
+              <svg class="h-5 w-5 text-zinc-500 transition group-hover:text-zinc-700 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+              </svg>
+              <svg class="h-5 w-5 text-zinc-400 transition group-hover:text-zinc-300 hidden dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button
+              id="menu-toggle"
+              class="md:hidden flex items-center border border-gray-200 rounded-full px-4 py-[6px] space-x-1 text-base focus:outline-none dark:border-zinc-700 dark:text-zinc-200"
+            >
+              <span>Menu</span>
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+          </div>
         </div>
 
         <!-- Mobile Menu -->
+        <!-- Mobile Menu Backdrop -->
+        <div
+          id="mobile-backdrop"
+          class="fixed inset-0 z-50 bg-zinc-800/40 backdrop-blur-sm md:hidden hidden"
+        ></div>
+
+        <!-- Mobile Menu Panel -->
         <div
           id="mobile-menu"
-          class="absolute left-0 top-full w-full bg-white z-40 md:hidden hidden px-4"
+          class="fixed inset-x-4 top-8 z-50 rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 md:hidden hidden dark:bg-zinc-900 dark:ring-zinc-800"
         >
-          <nav class="flex flex-col text-base">
+          <div class="flex items-center justify-between">
+            <h2 class="text-sm text-zinc-600 dark:text-zinc-400">Navigation</h2>
+            <button
+              id="menu-close"
+              class="cursor-pointer -m-1 p-1"
+              aria-label="Close menu"
+            >
+              <svg class="h-5 w-5 text-zinc-500 dark:text-zinc-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+            </button>
+          </div>
+          <nav class="mt-6 flex flex-col text-base">
             <a
               href="./about.html"
-              class="border-b border-gray-200 pt-2.5 pb-2.5 hover:text-teal-400"
+              class="border-b border-zinc-100 py-2 transition hover:text-teal-400 dark:border-zinc-800 dark:text-zinc-200 dark:hover:text-teal-400"
               >About</a
             >
             <a
               href="mailto:ben.openshaw@icloud.com"
-              class="flex items-center pt-2.5 pb-2.5 gap-2 transition hover:text-teal-400"
+              class="py-2 transition hover:text-teal-400 dark:text-zinc-200 dark:hover:text-teal-400"
             >
-              <span>Contact</span>
-              <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
+              Contact
             </a>
           </nav>
         </div>
@@ -95,8 +139,8 @@
             <!-- Left Column -->
             <div>
               <img src="/src/assets/images/Ben_portfolio.jpg" alt="Photo of Ben Openshaw" class="w-full h-auto object-cover mb-12 block lg:hidden" />
-              <h1 class="max-w-4xl text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-tight">About Me</h1>
-              <p class="text-base leading-7 max-w-3xl mb-6 text-zinc-600"">I’m Ben Openshaw, an Ecommerce Manager for a successful Shopify Plus store. I also help local merchants on a freelance basis, providing technical and operational support for their Shopify stores. Based in Hampton Court, Surrey.</p>
+              <h1 class="max-w-4xl text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-tight dark:text-zinc-100">About Me</h1>
+              <p class="text-base leading-7 max-w-3xl mb-6 text-zinc-600 dark:text-zinc-400"">I'm Ben Openshaw, an Ecommerce Manager for a successful Shopify Plus store. I also provide freelance Shopify support to local merchants. Based in Hampton Court, Surrey.</p>
             </div>
       
             <!-- Right Column -->
@@ -110,15 +154,15 @@
       <!-- Contact Section -->
       <section class="pb-12 lg:pb-16">
         <div class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24">
-          <div class="md:border-l md:border-zinc-100 md:pl-6">
+          <div class="md:border-l md:border-zinc-100 md:pl-6 dark:md:border-zinc-700/40">
             <div class="grid grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
-              <h2 class="text-base">
+              <h2 class="text-base dark:text-zinc-100">
                 Contact
               </h2>
               <div class="md:col-span-3">
                 <div class="space-y-4 md:space-y-6">
                   <div
-                    class="group relative flex items-center w-max gap-2 transition text-zinc-600 hover:text-teal-400"
+                    class="group relative flex items-center w-max gap-2 transition text-zinc-600 hover:text-teal-400 dark:text-zinc-400 dark:hover:text-teal-400"
                   >
                     <a
                       href="mailto:ben.openshaw@icloud.com"
@@ -130,7 +174,7 @@
                     ></i>
                   </div>
                   <div
-                    class="group relative flex items-center w-max gap-2 transition text-zinc-600 hover:text-teal-400"
+                    class="group relative flex items-center w-max gap-2 transition text-zinc-600 hover:text-teal-400 dark:text-zinc-400 dark:hover:text-teal-400"
                   >
                     <a
                       href="https://www.linkedin.com/in/ben-openshaw-373526167/"
@@ -152,7 +196,7 @@
       <!-- Footer Section -->
       <footer>
         <div
-          class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24 border-t border-zinc-100"
+          class="mx-auto w-full max-w-7xl px-4 md:px-10 lg:px-24 border-t border-zinc-100 dark:border-zinc-700/40"
         >
           <div class="pt-16 pb-16">
             <div
@@ -164,15 +208,14 @@
                 <!-- <a href="#" class="transition hover:text-teal-400 uppercase">Projects</a> -->
                 <a
                   href="./about.html"
-                  class="transition hover:text-teal-400"
+                  class="transition hover:text-teal-400 dark:text-zinc-200 dark:hover:text-teal-400"
                   >About</a
                 >
                 <a
                   href="mailto:ben.openshaw@icloud.com"
-                  class="flex items-center gap-2 transition hover:text-teal-400"
+                  class="transition hover:text-teal-400 dark:text-zinc-200 dark:hover:text-teal-400"
                 >
-                  <span>Contact</span>
-                  <i class="text-xs fa-solid fa-arrow-up-right-from-square"></i>
+                  Contact
                 </a>
               </div>
               <p class="text-base text-zinc-400">
